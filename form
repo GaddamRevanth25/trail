@@ -1,1 +1,68 @@
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div>
+      <h1>Login Form</h1>
+    </div>
+    <form action="backend.php">
+      <div>
+        <label for="Name">Name</label>
+        <input type="text" name="MyName" id="Name" />
+      </div>
+      <br />
+      <div>
+        <label for="Role">Role</label>
+        <input type="text" name="MyRole" id="Role" />
+      </div>
+      <br />
+      <div>Email: <input type="email" name="MyEmail" /></div>
+      <br />
+      <div>
+        <label for="DOB">DOB:</label>
+        <input type="date" name="MyDate" id="DOB" />
+      </div>
+      <br />
+      <div>
+        <label for="Eligibility">Are you eligible?</label>
+        <input type="checkbox" name="Myeligibility" id="Eligibility" />
+      </div>
+      <br />
+      <div>
+        Gender: <br />
+        Male: <input type="radio" name="MyGender" checked /> <br />
+        Female: <input type="radio" name="MyGender" /> <br />
+        Other: <input type="radio" name="MyGender" /> <br />
+      </div>
+      <br />
+      <div>
+        Write about yourself: <br /><textarea
+          name="Mytext"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="car">car</label>
+        <select name="MyCar" id="car">
+          <option value="None" selected>None</option>
+          <option value="swt">Swift</option>
+          <option value="indi">indica</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="reset" value="Reset Now" />
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Log-In" />
+      </div>
+      <br />
+    </form>
+  </body>
+</html>
